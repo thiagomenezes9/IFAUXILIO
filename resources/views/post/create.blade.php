@@ -1,7 +1,7 @@
 @extends('adminlte::layouts.app')
 
 @section('htmlheader_title')
-    Posts
+    Noticia
 @stop
 
 @section('contentheader_title')
@@ -9,7 +9,7 @@
 @stop
 
 @section('contentheader_description')
-    Novo Post
+    Nova noticia
 @stop
 
 
@@ -47,7 +47,7 @@
 
                 <div class="box">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Novo Post</h3>
+                        <h3 class="box-title">Nova Noticia</h3>
                         <div align="right"><a href="{{route('posts.index')}}" class="btn btn-info">Voltar</a></div>
                     </div>
 

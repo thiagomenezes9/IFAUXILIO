@@ -38,6 +38,12 @@ Route::group(['middleware'=>['web']],function(){
 
         Route::resource('usuarios','UserController');
         Route::resource('posts','PostController');
+        Route::resource('editais','EditaisController');
+        Route::resource('selecao','SelecaoController');
+        Route::resource('questionarios','QuestionariosController');
+        Route::resource('relatorios','RelatorioController');
+        Route::resource('Avaliacao','AvaliacaoController');
+
 
     });
 

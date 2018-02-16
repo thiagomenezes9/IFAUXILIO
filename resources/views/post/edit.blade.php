@@ -3,7 +3,7 @@
 
 
 @section('htmlheader_title')
-    Posts
+    Noticia
 @stop
 
 @section('contentheader_title')
@@ -11,7 +11,7 @@
 @stop
 
 @section('contentheader_description')
-    Editando Posts
+    Editando Noticia
 @stop
 
 
@@ -69,7 +69,7 @@
 
                 <div class="box">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Edição do Post</h3>
+                        <h3 class="box-title">Edição da Noticia</h3>
                         <div align="right"><a href="{{route('posts.index')}}" class="btn btn-info">Voltar</a></div>
                         {{--<div align="right"><a href="{{route('pais.create')}}" class="btn btn-success">Novo</a></div>--}}
                     </div>

@@ -1,7 +1,7 @@
 @extends('adminlte::layouts.app')
 
 @section('htmlheader_title')
-    Noticia
+    Editais
 @stop
 
 @section('contentheader_title')
@@ -9,7 +9,7 @@
 @stop
 
 @section('contentheader_description')
-    Lista das Noticias
+    Lista dos Editais
 @stop
 
 
@@ -42,8 +42,8 @@
 
                 <div class="box">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Noticias</h3>
-                        <div align="right"><a href="{{route('posts.create')}}" class="btn btn-success">Novo</a></div>
+                        <h3 class="box-title">Editais</h3>
+                        <div align="right"><a href="{{route('editais.create')}}" class="btn btn-success">Novo</a></div>
                     </div>
 
                     <div class="box-body">
@@ -51,31 +51,27 @@
                         <table class="table table-bordered table-striped" id="tabCoordenacoes">
                             <thead>
                             <tr>
-                                <td class="col-md-5"><strong>Titulo</strong></td>
+                                <td class="col-md-5"><strong>Nome</strong></td>
                                 <td class="col-mb-4" align="center"><strong>Ações</strong></td>
                             </tr>
                             </thead>
 
 
                             <tbody>
-                            @foreach($posts as $post)
+                            @foreach($editais as $e)
                                 <tr align="center">
-                                    <td align="left">{{ $post->title}}</td>
-
+                                    <td align="left">{{ $e->name }}</td>
+                                    {{--<td align="left">{{$u->active ? 'Sim' : 'Não'}}</td>--}}
                                     <td>
-                                        <a class="btn btn-small btn-info" href="{{route('posts.show',$post->id)}}" >
+                                        <a class="btn btn-small btn-info" href="#" >
                                             <i class="fa fa-search-plus"></i>
                                             Visualizar
                                         </a>
 
-
-                                        @can('edit', $post)
-                                            <a href="{{route('posts.edit', $post->id)}}" class="btn btn-small btn-warning">
-                                                <i class="fa fa-pencil-square-o"></i>Editar
-                                            </a>
-                                        @endcan
-
-
+                                        <a class="btn btn-small btn-warning" href="#" >
+                                            <i class="fa fa-pencil-square-o"></i>
+                                            Baixar
+                                        </a>
 
 
                                     </td>

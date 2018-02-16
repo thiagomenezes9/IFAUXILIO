@@ -37,18 +37,59 @@
 
                 <a href="{{route('posts.index')}}">
                     <i class="fa fa-newspaper-o"></i>
-                    <span>Posts</span>
+                    <span>Noticias</span>
 
                 </a>
+
+
+                <a href="{{route('editais.index')}}">
+                    <i class="fa fa-newspaper-o"></i>
+                    <span>Editais</span>
+
+                </a>
+
+
+                <a href="{{route('questionarios.index')}}">
+                    <i class="fa fa-newspaper-o"></i>
+                    <span>Questionario</span>
+
+                </a>
+
+                <a href="{{route('inscricao.index')}}">
+                    <i class="fa fa-newspaper-o"></i>
+                    <span>Inscricao</span>
+
+                </a>
+
+                <a href="{{route('avaliacao.index')}}">
+                    <i class="fa fa-newspaper-o"></i>
+                    <span>Avaliação</span>
+
+                </a>
+
 
 
                 @if(Auth::user()->type == 'ADMIN')
 
                     <a href="{{route('usuarios.index')}}">
                         <i class="fa fa-user"></i>
-                        <span>Usuários</span>
+                        <span>Alunos / Usuarios</span>
 
                     </a>
+
+                    <a href="{{route('selecao.index')}}">
+                        <i class="fa fa-user"></i>
+                        <span>selecao</span>
+
+                    </a>
+
+                    <a href="{{route('relatorios.index')}}">
+                        <i class="fa fa-user"></i>
+                        <span>relatorios</span>
+
+                    </a>
+
+
 
                 @endif
 
