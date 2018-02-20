@@ -13,7 +13,7 @@ class SelecaoController extends Controller
      */
     public function index()
     {
-        //
+        return view('selecao.index');
     }
 
     /**

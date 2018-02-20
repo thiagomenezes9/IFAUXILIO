@@ -1,7 +1,7 @@
 @extends('adminlte::layouts.app')
 
 @section('htmlheader_title')
-    Seleção
+    Inscrição
 @stop
 
 @section('contentheader_title')
@@ -9,7 +9,7 @@
 @stop
 
 @section('contentheader_description')
-    Seleção
+    Inscrição
 @stop
 
 
@@ -42,7 +42,7 @@
 
                 <div class="box">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Seleção</h3>
+                        <h3 class="box-title">Inscrição</h3>
                         {{--<div align="right"><a href="{{route('usuarios.create')}}" class="btn btn-success">Novo</a></div>--}}
 
                     </div>
@@ -50,9 +50,16 @@
                     <div class="box-body">
 
 
-                        <h3>Seleção</h3>
+                        <h3>Inscrição</h3>
 
-                        Nome-----------QualBolsa--------Aprovar ou Reprovar
+                        Qual alxilio deseja
+
+                        Nome
+                        Cpf
+                        nome Pai
+                        nome mae
+                        telefone
+                        endereco
 
 
 

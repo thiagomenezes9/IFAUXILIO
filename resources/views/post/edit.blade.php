@@ -103,6 +103,15 @@
 
 
 
+                            <div class="form-group">
+                                <label for="arquivo" class="col-sm-2 control-label">Arquivo</label>
+                                <input name="arquivo" type="file" class="form-control-file"
+                                       id="arquivo" autofocus>
+                            </div>
+
+
+
+
                             <div class="box-footer">
                                 <button type="submit" class="btn btn-info pull-right btn-lg">
                                     Salvar</button>

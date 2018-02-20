@@ -37,16 +37,10 @@
 
                 <a href="{{route('posts.index')}}">
                     <i class="fa fa-newspaper-o"></i>
-                    <span>Noticias</span>
+                    <span>Noticias / Editais</span>
 
                 </a>
 
-
-                <a href="{{route('editais.index')}}">
-                    <i class="fa fa-newspaper-o"></i>
-                    <span>Editais</span>
-
-                </a>
 
 
                 <a href="{{route('questionarios.index')}}">

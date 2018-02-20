@@ -43,7 +43,7 @@
                 <div class="box">
                     <div class="box-header with-border">
                         <h3 class="box-title">Usuários</h3>
-                        {{--<div align="right"><a href="{{route('usuarios.create')}}" class="btn btn-success">Novo</a></div>--}}
+                        <div align="right"><a href="{{route('usuarios.create')}}" class="btn btn-success">Novo</a></div>
                     </div>
 
                     <div class="box-body">

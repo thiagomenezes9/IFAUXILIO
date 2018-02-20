@@ -33,6 +33,8 @@
 
                         <p><strong><h2>Titulo : {{$post->title}}</h2></strong></p><br>
                         <p><strong>conteudo : {{$post->content}}</strong></p><br>
+                        <p><strong>Arquivo : BAIXAR OU VISUALIZAR AQUIVO</strong></p><br>
+
 
 
 

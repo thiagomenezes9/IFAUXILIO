@@ -42,7 +42,9 @@ Route::group(['middleware'=>['web']],function(){
         Route::resource('selecao','SelecaoController');
         Route::resource('questionarios','QuestionariosController');
         Route::resource('relatorios','RelatorioController');
-        Route::resource('Avaliacao','AvaliacaoController');
+        Route::resource('avaliacao','AvaliacaoController');
+        Route::resource('inscricao','IncricaoController');
+
 
 
     });

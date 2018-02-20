@@ -13,7 +13,7 @@ class QuestionariosController extends Controller
      */
     public function index()
     {
-        //
+        return view('questionarios.index');
     }
 
     /**

@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
-class AvaliacaoController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,8 @@ class AvaliacaoController extends Controller
      */
     public function index()
     {
-        return view('avaliacao.index');
+        $usuarios = User::all();
+        return view('user.index',compact('usuarios'));
     }
 
     /**
@@ -23,7 +25,7 @@ class AvaliacaoController extends Controller
      */
     public function create()
     {
-        //
+        return view('user.create');
     }
 
     /**
@@ -34,7 +36,17 @@ class AvaliacaoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'nome' => 'required',
+            'cpf' => 'required',
+            'senha' => 'required',
+            'matricula' => 'required',
+            'curso' => 'required'
+
+        ]);
+
+
+        return redirect('usuarios');
     }
 
     /**
@@ -45,7 +57,9 @@ class AvaliacaoController extends Controller
      */
     public function show($id)
     {
-        //
+        $usuario = User::findOrFail($id);
+
+        return view('user.show',compact('usuario'));
     }
 
     /**
@@ -56,7 +70,13 @@ class AvaliacaoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $usuario = User::findOrFail($id);
+//        $coordenacao = Coordenacao::all()->where('ativo','1');
+
+
+
+
+        return view('user.edit',compact('usuario'));
     }
 
     /**
@@ -68,7 +88,35 @@ class AvaliacaoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $this->validate($request, [
+            'nome' => 'required'
+
+        ]);
+
+        $user = User::findOrFail($id);
+
+
+
+
+
+
+//            dd($request);
+
+        $user->name=$request->nome;
+        $user->type=$request->tipo;
+        $user->active=$request->ativo;
+
+
+
+
+        $user->save();
+
+
+        return redirect('usuarios');
+
+
+
     }
 
     /**
