@@ -43,7 +43,9 @@
                 <div class="box">
                     <div class="box-header with-border">
                         <h3 class="box-title">Noticias</h3>
+                        @if(Auth::user()->type == 'ADMIN')
                         <div align="right"><a href="{{route('posts.create')}}" class="btn btn-success">Novo</a></div>
+                            @endif
                     </div>
 
                     <div class="box-body">

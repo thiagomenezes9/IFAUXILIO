@@ -52,15 +52,80 @@
 
                         <h3>Inscrição</h3>
 
-                        Qual alxilio deseja
+                        <form class="form-horizontal">
 
-                        Nome
-                        Cpf
-                        nome Pai
-                        nome mae
-                        telefone
-                        endereco
 
+                        <div class="form-group">
+                            <label for="sigla" class="col-sm-2 control-label" >Auxilio</label>
+                            <div class="col-sm-10">
+                                <select name="tipo" id="tipo" class="form-control">
+                                    <option>Auxilio Alimentação</option>
+                                    <option>Auxilio Transporte</option>
+                                    <option>Auxilio Permanencia</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="title" class="col-sm-2 control-label" >Nome</label>
+                            <div class="col-sm-10">
+                                <input name="title" type="text" class="form-control input-lg"
+                                       id="title" autofocus>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="conteudo" class="col-sm-2 control-label" >CPF</label>
+
+                            <div class="col-sm-10">
+
+                                <input name="conteudo"  type="text" class="form-control input-lg"
+                                       id="conteudo"  autofocus>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="title" class="col-sm-2 control-label" >Nome do Pai</label>
+                            <div class="col-sm-10">
+                                <input name="title" type="text" class="form-control input-lg"
+                                       id="title"  autofocus>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="title" class="col-sm-2 control-label" >Nome da Mãe</label>
+                            <div class="col-sm-10">
+                                <input name="title" type="text" class="form-control input-lg"
+                                       id="title"  autofocus>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="title" class="col-sm-2 control-label" >Telefone</label>
+                            <div class="col-sm-10">
+                                <input name="title" type="text" class="form-control input-lg"
+                                       id="title"  autofocus>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="title" class="col-sm-2 control-label" >Endereço</label>
+                            <div class="col-sm-10">
+                                <input name="title" type="text" class="form-control input-lg"
+                                       id="title"  autofocus>
+                            </div>
+                        </div>
+
+                        <div class="box-footer">
+                            <button  class="btn btn-info pull-right btn-lg">
+                                Salvar</button>
+
+                        </div>
+
+                        </form>
 
 
                     </div>

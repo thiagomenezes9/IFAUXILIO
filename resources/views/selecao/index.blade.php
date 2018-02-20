@@ -52,7 +52,147 @@
 
                         <h3>Seleção</h3>
 
-                        Nome-----------QualBolsa--------Aprovar ou Reprovar
+                        <table class="table table-bordered table-striped" id="tabCoordenacoes">
+                            <thead>
+                            <tr>
+                                <td class="col-md-4"><strong>Aluno</strong></td>
+                                <td class="col-md-4"><strong>Bolsa</strong></td>
+                                <td class="col-mb-4" align="center"><strong>Ações</strong></td>
+                            </tr>
+                            </thead>
+
+
+                            <tbody>
+                                  <tr align="center">
+                                    <td align="left">Aluno 1</td>
+                                    <td align="left">Auxilio Transpote</td>
+
+
+
+                                    <td>
+                                        <a class="btn btn-small btn-info" href="#" >
+                                            <i class="fa fa-search-plus"></i>
+                                            Aprovar
+                                        </a>
+
+
+
+                                            <a href="#" class="btn btn-small btn-warning">
+                                                <i class="fa fa-pencil-square-o"></i>Reprovar
+                                            </a>
+
+
+
+
+
+                                    </td>
+                                </tr>
+
+
+                                  <tr align="center">
+                                      <td align="left">Aluno 2</td>
+                                      <td align="left">Auxilio Permanencia</td>
+
+
+
+                                      <td>
+                                          <a class="btn btn-small btn-info" href="#" >
+                                              <i class="fa fa-search-plus"></i>
+                                              Aprovar
+                                          </a>
+
+
+
+                                              <a href="#" class="btn btn-small btn-warning">
+                                                  <i class="fa fa-pencil-square-o"></i>Reprovar
+                                              </a>
+
+
+
+
+
+                                      </td>
+                                  </tr>
+
+                                  <tr align="center">
+                                      <td align="left">Aluno 3</td>
+                                      <td align="left">Auxilio Alimentação</td>
+
+
+
+                                      <td>
+                                          <a class="btn btn-small btn-info" href="#" >
+                                              <i class="fa fa-search-plus"></i>
+                                              Aprovar
+                                          </a>
+
+
+
+                                              <a href="#" class="btn btn-small btn-warning">
+                                                  <i class="fa fa-pencil-square-o"></i>Reprovar
+                                              </a>
+
+
+
+
+
+                                      </td>
+                                  </tr>
+                                  <tr align="center">
+                                      <td align="left">Aluno 4</td>
+                                      <td align="left">Auxilio Alimentação</td>
+
+
+
+                                      <td>
+                                          <a class="btn btn-small btn-info" href="#" >
+                                              <i class="fa fa-search-plus"></i>
+                                              Aprovar
+                                          </a>
+
+
+
+                                              <a href="#" class="btn btn-small btn-warning">
+                                                  <i class="fa fa-pencil-square-o"></i>Reprovar
+                                              </a>
+
+
+
+
+
+                                      </td>
+                                  </tr>
+                                  <tr align="center">
+                                      <td align="left">Aluno 5</td>
+                                      <td align="left">Auxilio Alimentação</td>
+
+
+
+                                      <td>
+                                          <a class="btn btn-small btn-info" href="#" >
+                                              <i class="fa fa-search-plus"></i>
+                                              Aprovar
+                                          </a>
+
+
+
+                                              <a href="#" class="btn btn-small btn-warning">
+                                                  <i class="fa fa-pencil-square-o"></i>Reprovar
+                                              </a>
+
+
+
+
+
+                                      </td>
+                                  </tr>
+
+                            </tbody>
+                        </table>
+
+
+
+
 
 
 
