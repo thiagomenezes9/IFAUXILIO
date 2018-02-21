@@ -35,6 +35,24 @@
     @endif
 
 
+    @if (Session::get('success'))
+        <div class="box success alert-success">
+            <div class="box-header with-border">
+                <h3 class="box-title text-gray">PARABENS</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool"
+                            data-widget="remove" data-toggle="tooltip" title="Fechar">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="success success">{{ Session::get('success') }}</div>
+            </div>
+        </div>
+    @endif
+
+
     <div class="container-fluid spark-screen">
         <div class="row">
 
@@ -52,8 +70,9 @@
 
                         <h3>Inscrição</h3>
 
-                        <form class="form-horizontal">
+                        <form class="form-horizontal" action="{{route('inscricao.store')}}" method="post" enctype="multipart/form-data">
 
+                            {{ csrf_field() }}
 
                         <div class="form-group">
                             <label for="sigla" class="col-sm-2 control-label" >Auxilio</label>
@@ -120,7 +139,7 @@
                         </div>
 
                         <div class="box-footer">
-                            <button  class="btn btn-info pull-right btn-lg">
+                            <button type="submit" class="btn btn-info pull-right btn-lg">
                                 Salvar</button>
 
                         </div>

@@ -44,19 +44,19 @@
 
 
                 <a href="{{route('questionarios.index')}}">
-                    <i class="fa fa-newspaper-o"></i>
+                    <i class="fa fa-comment-o"></i>
                     <span>Questionario</span>
 
                 </a>
 
                 <a href="{{route('inscricao.index')}}">
-                    <i class="fa fa-newspaper-o"></i>
+                    <i class="fa fa-edit"></i>
                     <span>Inscricao</span>
 
                 </a>
 
                 <a href="{{route('avaliacao.index')}}">
-                    <i class="fa fa-newspaper-o"></i>
+                    <i class="fa fa-balance-scale"></i>
                     <span>Avaliação</span>
 
                 </a>
@@ -66,19 +66,19 @@
                 @if(Auth::user()->type == 'ADMIN')
 
                     <a href="{{route('usuarios.index')}}">
-                        <i class="fa fa-user"></i>
+                        <i class="fa fa-group"></i>
                         <span>Alunos / Usuarios</span>
 
                     </a>
 
                     <a href="{{route('selecao.index')}}">
-                        <i class="fa fa-user"></i>
+                        <i class="fa fa-hdd-o"></i>
                         <span>selecao</span>
 
                     </a>
 
                     <a href="{{route('relatorios.index')}}">
-                        <i class="fa fa-user"></i>
+                        <i class="fa fa-area-chart"></i>
                         <span>relatorios</span>
 
                     </a>

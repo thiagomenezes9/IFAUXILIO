@@ -70,14 +70,14 @@
 
 
                                     <td>
-                                        <a class="btn btn-small btn-info" href="#" >
+                                        <a class="btn btn-small btn-info" href="{{route('selecao.create')}}" >
                                             <i class="fa fa-search-plus"></i>
                                             Aprovar
                                         </a>
 
 
 
-                                            <a href="#" class="btn btn-small btn-warning">
+                                            <a href="{{route('selecao.show',0)}}" class="btn btn-small btn-warning">
                                                 <i class="fa fa-pencil-square-o"></i>Reprovar
                                             </a>
 
@@ -96,14 +96,14 @@
 
 
                                       <td>
-                                          <a class="btn btn-small btn-info" href="#" >
+                                          <a class="btn btn-small btn-info" href="{{route('selecao.create')}}" >
                                               <i class="fa fa-search-plus"></i>
                                               Aprovar
                                           </a>
 
 
 
-                                              <a href="#" class="btn btn-small btn-warning">
+                                              <a href="{{route('selecao.show',0)}}" class="btn btn-small btn-warning">
                                                   <i class="fa fa-pencil-square-o"></i>Reprovar
                                               </a>
 
@@ -121,14 +121,14 @@
 
 
                                       <td>
-                                          <a class="btn btn-small btn-info" href="#" >
+                                          <a class="btn btn-small btn-info" href="{{route('selecao.create')}}" >
                                               <i class="fa fa-search-plus"></i>
                                               Aprovar
                                           </a>
 
 
 
-                                              <a href="#" class="btn btn-small btn-warning">
+                                              <a href="{{route('selecao.show',0)}}" class="btn btn-small btn-warning">
                                                   <i class="fa fa-pencil-square-o"></i>Reprovar
                                               </a>
 
@@ -145,14 +145,14 @@
 
 
                                       <td>
-                                          <a class="btn btn-small btn-info" href="#" >
+                                          <a class="btn btn-small btn-info" href="{{route('selecao.create')}}" >
                                               <i class="fa fa-search-plus"></i>
                                               Aprovar
                                           </a>
 
 
 
-                                              <a href="#" class="btn btn-small btn-warning">
+                                              <a href="{{route('selecao.show',0)}}" class="btn btn-small btn-warning">
                                                   <i class="fa fa-pencil-square-o"></i>Reprovar
                                               </a>
 
@@ -169,14 +169,14 @@
 
 
                                       <td>
-                                          <a class="btn btn-small btn-info" href="#" >
+                                          <a class="btn btn-small btn-info" href="{{route('selecao.create')}}" >
                                               <i class="fa fa-search-plus"></i>
                                               Aprovar
                                           </a>
 
 
 
-                                              <a href="#" class="btn btn-small btn-warning">
+                                              <a href="{{route('selecao.show',0)}}" class="btn btn-small btn-warning">
                                                   <i class="fa fa-pencil-square-o"></i>Reprovar
                                               </a>
 

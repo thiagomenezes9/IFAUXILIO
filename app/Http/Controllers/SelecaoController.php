@@ -23,7 +23,7 @@ class SelecaoController extends Controller
      */
     public function create()
     {
-        //
+        return redirect()->route('dashboard')->with('success','Aluno foi selecionado para o auxilio!')->withInput();
     }
 
     /**
@@ -34,7 +34,7 @@ class SelecaoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
@@ -45,7 +45,7 @@ class SelecaoController extends Controller
      */
     public function show($id)
     {
-        //
+        return redirect()->route('dashboard')->with('fail','Aluno não foi selecionado para o auxilio!')->withInput();
     }
 
     /**
@@ -56,7 +56,7 @@ class SelecaoController extends Controller
      */
     public function edit($id)
     {
-        //
+
     }
 
     /**
@@ -68,7 +68,7 @@ class SelecaoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //return redirect()->route('dashboard')->with('fail','Aluno não foi selecionado para o auxilio!')->withInput();
     }
 
     /**
@@ -79,6 +79,6 @@ class SelecaoController extends Controller
      */
     public function destroy($id)
     {
-        //
+
     }
 }

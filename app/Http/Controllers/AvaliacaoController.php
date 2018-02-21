@@ -34,7 +34,7 @@ class AvaliacaoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return redirect()->route('dashboard')->with('success','Avaliação realizada com sucesso!')->withInput();
     }
 
     /**

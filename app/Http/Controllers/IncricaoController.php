@@ -34,7 +34,9 @@ class IncricaoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+       // return redirect()->route('inscricao.index')->with('success','Inscrição realizada com sucesso!')->withInput();
+        return redirect()->route('dashboard')->with('success','Inscrição realizada com sucesso!')->withInput();
     }
 
     /**
