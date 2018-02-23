@@ -23,7 +23,7 @@ class QuestionariosController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -34,7 +34,8 @@ class QuestionariosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        return redirect()->route('dashboard')->with('success','Questionario respondido com sucesso!')->withInput();
     }
 
     /**
