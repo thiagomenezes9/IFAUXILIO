@@ -66,7 +66,7 @@
 
                             </ul>
 
-                            <form class="form-horizontal" action="{{route('inscricao.store')}}" method="post"
+                            <form class="form-horizontal" action="{{route('questionarios.store')}}" method="post"
                                   enctype="multipart/form-data">
 
                                 {{ csrf_field() }}
@@ -980,38 +980,172 @@
 
                                     <div role="tabpanel" class="tab-pane" id="section4">
 
-                                        <h3>Resposta 04</h3>
+                                        <h3>Moradia</h3>
 
-                                        casa da familia e
-                                        Na cidade em que o câmpus escolar está localizado, como você mora?
-                                        transporte ate a escola
-                                        familia recebe beneficil do governo
-                                        saude procura
-                                        despesas da familia
-                                        despesas do estudante
-                                        bens q a familia possui
+
+                                        <div class="form-group">
+                                            <p class="col-sm-12">A casa em que sua família mora é</p>
+                                        </div>
+                                        <div class="form-group">
+                                            {{--<label for="sigla" class="col-sm-2 control-label" ></label>--}}
+                                            <div class="col-sm-12">
+                                                <select name="tipo" id="tipo" class="form-control">
+                                                    <option>Propia</option>
+                                                    <option>Financiada</option>
+                                                    <option>Alugada</option>
+                                                    <option>Cedida</option>
+                                                    <option>Herdada</option>
+                                                    <option>Outro</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="title" class="col-sm-2 control-label" >Especifique</label>
+                                            <div class="col-sm-10">
+                                    <input name="title" type="text" class="form-control input-lg"
+                                              id="title" autofocus>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <p class="col-sm-12">Na cidade em que o câmpus escolar está localizado, como você mora?</p>
+                                        </div>
+                                        <div class="form-group">
+                                            {{--<label for="sigla" class="col-sm-2 control-label" ></label>--}}
+                                            <div class="col-sm-12">
+                                                <select name="tipo" id="tipo" class="form-control">
+                                                    <option>Sozinho</option>
+                                                    <option>Familiares</option>
+                                                    <option>Republia (Quantidade)</option>
+                                                    <option>Pensão</option>
+                                                    <option>Não moro viajo todo dia</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="title" class="col-sm-2 control-label" >Especifique</label>
+                                            <div class="col-sm-10">
+                                    <input name="title" type="text" class="form-control input-lg"
+                                              id="title" autofocus>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="conteudo" class="col-sm-12" >Qual transporte utiliza para chegar à escola?</label>
+
+                                            <div class="col-sm-12">
+
+                                                <input name="conteudo" type="text" class="form-control input-lg"
+                                                       id="conteudo" autofocus>
+                                            </div>
+
+
+                                            <label for="conteudo" class="col-sm-12" >A família recebe algum benefício social do Governo Federal?</label>
+
+                                            <div class="col-sm-12">
+
+                                                <input name="conteudo" type="text" class="form-control input-lg"
+                                                       id="conteudo" autofocus>
+                                            </div>
+
+
+                                            <label for="conteudo" class="col-sm-12" >Para tratamento de saúde você procura:</label>
+
+                                            <div class="col-sm-12">
+
+                                                <input name="conteudo" type="text" class="form-control input-lg"
+                                                       id="conteudo" autofocus>
+                                            </div>
+
+                                            <label class="col-sm-12">Descreva as despesas fixas de sua família:</label>
+
+                                            <div class="col-sm-10">
+                                            <textarea class="form-control input-lg"></textarea>
+                                            </div>
+                                            <label class="col-sm-12">Descreva as despesas fixas do estudante (caso não more com a família):</label>
+
+                                            <div class="col-sm-10">
+                                            <textarea class="form-control input-lg"></textarea>
+                                            </div>
+
+                                            <label class="col-sm-12">Com relação a bens, descreva quais sua familia possui</label>
+
+                                            <div class="col-sm-10">
+                                            <textarea class="form-control input-lg"></textarea>
+                                            </div>
+
+                                        </div>
 
 
                                     </div>
 
                                     <div role="tabpanel" class="tab-pane" id="section5">
 
-                                        <h3>Resposta 05</h3>
+                                        <h3>Composição Familiar</h3>
 
-                                        pessoas q mora com vc
 
-                                        pessoas q tem doença
+                                        <div class="form-group">
+                                            <p class="col-sm-12">Descreva no campo abaixo o nome de todas as pessoas que moram na residência de sua família (inclusive você , avós, tios, primos ou amigos) e informe a renda daqueles que trabalham.</p>
+                                        </div>
 
-                                        quantos faz faculdade
+                                        <div class="form-group">
+                                            {{--<label for="title" class="col-sm-2 control-label" ></label>--}}
+                                            <div class="col-sm-12">
+                                                <textarea name="title" type="text" class="form-control input-lg"
+                                                          id="title" autofocus></textarea>
+                                            </div>
+                                        </div>
 
-                                        pq precisa da bolsa
+                                        <div class="form-group">
+                                            <p class="col-sm-12">Pessoas com doenças graves ou crônicas na residência de sua família?</p>
+                                        </div>
 
+                                        <div class="form-group">
+                                            {{--<label for="title" class="col-sm-2 control-label" ></label>--}}
+                                            <div class="col-sm-12">
+                                                <textarea name="title" type="text" class="form-control input-lg"
+                                                          id="title" autofocus></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <p class="col-sm-12"> Na residência de sua família tem pessoa(s) que estuda(m) em alguma Universidade ou no IFG?</p>
+                                        </div>
+
+                                        <div class="form-group">
+                                            {{--<label for="title" class="col-sm-2 control-label" ></label>--}}
+                                            <div class="col-sm-12">
+                                                <textarea name="title" type="text" class="form-control input-lg"
+                                                          id="title" autofocus></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <p class="col-sm-12"> Relate os motivos pelos quais você necessita de bolsa de assistência estudantil para garantir sua permanência na universidade, nos próximos períodos:
+                                            </p>
+                                        </div>
+
+                                        <div class="form-group">
+                                            {{--<label for="title" class="col-sm-2 control-label" ></label>--}}
+                                            <div class="col-sm-12">
+                                                <textarea name="title" type="text" class="form-control input-lg"
+                                                          id="title" autofocus></textarea>
+                                            </div>
+                                        </div>
 
                                     </div>
 
 
                                 </div>
 
+
+                                <div class="box-footer">
+                                    <button type="submit" class="btn btn-info pull-right btn-lg">
+                                        Salvar</button>
+
+                                </div>
 
                             </form>
                         </div>
